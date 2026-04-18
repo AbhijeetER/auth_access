@@ -3,3 +3,4 @@ import * as schema from './schema'
 
 export const db = drizzle(process.env.DATABASE_URL!, {schema});
 
+//no more function here could have been in same file as schema.ts
