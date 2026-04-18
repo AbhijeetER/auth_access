@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { Button } from '@/components/ui/button'
 
 export default function Home(){
 
@@ -7,7 +8,8 @@ export default function Home(){
     <div className='my-6 px-4 max-w-md mx-auto'>
       <div className='text-center space-y-6'>
         <h1 className='text-3xl font-bold'>Welcome to our App</h1>
-        <Link href={'/auth/login'}>Sign In/Up</Link>
+        <Button asChild size='lg'>  <Link href={'/auth/login'}>Sign In/Up</Link></Button>
+      
       </div>
     </div>
   )
